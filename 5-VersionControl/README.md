@@ -30,9 +30,10 @@ A un nivel fundamental, el problema es que rara vez creamos productos perfectos 
 
 Cuando trabajas con tus datos, sea en recolección, limpieza, transformaciones, o análisis, puede que ya trabajes de una forma que es auto-documentante. Esto ocurre cuando estas escribiendo código y no ocupando herramientas de 'point & click' (GUI  - Graphical User Interface). La ventaja de esto es que es reproducible, la desventaja es que si tienes la versión incorrecta toda linea de producción de tu estudio se estanca.
 
-Una forma relativamente comun de definir tu flujo de trabajo se puede encontrar [aqui](https://bids.github.io/2017-01-12-ucb/lessons/R/reproducible_workflow.html). Si hacen clases en pregrado, miren el protocolo del [Project TIER](http://www.projecttier.org/).  
+Una forma relativamente común de definir tu flujo de trabajo se puede encontrar [aqui](https://bids.github.io/2017-01-12-ucb/lessons/R/reproducible_workflow.html). Si hacen clases en pre-grado, miren el protocolo del [Project TIER](http://www.projecttier.org/).  
 
-The aspirational goal is that I should be able to sneak into your lab late at night, delete everything except for your raw data and your code, and you should be able to run a single command to regenerate EVERYTHING, including all of your results, tables, and figures in their final, polished form. Think of this as the “push button” or "one click" workflow.
+La meta aspiracional es que yo debería ser capaz de entrar en tu laboratorio en la noche, borrar todos tus archivos excepto tu código y datos originales, y tu deberías ser capaz de ejecutar un solo comando para regenerar TODO, incluyendo todos los resultados, tablas y figuras en su forma final. Esto es lo que se entiende por flujo de trabajo de un-click.
+
 
 Unlike the situation above, when you can't find the right version of your processing pipeline, analytical workflow, or data, you also lose the ability to recreate any results that you've generated. If your results are not reproducible, then they are also :
 
