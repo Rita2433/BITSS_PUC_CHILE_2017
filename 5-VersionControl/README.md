@@ -28,9 +28,7 @@ Y acercarnos un poco a esto:
 
 A un nivel fundamental, el problema es que rara vez creamos productos perfectos en el primer intento. Añadimos, borramos y revisamos constantemente. En el caso de tareas de procesar texto, como en el ejemplo de PhD Comics, las consecuencias son menores, como el tiempo que te toma en encontrar el archivo correcto, o la vergüenza de enviar la versión incorrecta a un colega.
 
-At a fundamental level, the problem is that we do not create perfect products the first time around. We add to them, remove things from them, and revise them heavily. For word processing tasks, like the PhD Comics example, this is somewhat harmless, and really is only costing you time in finding the correct document, or some embarrassment if you send the wrong document to a colleague.
-
-You may already be collecting, cleaning, reshaping, and analyzing your data in a way that is self documenting. That is to say, you are writing it in code, and are not modifying pieces of it by hand or in a GUI. The upside to this is reproducibility. The downside is that if any of your code is the wrong version, your whole pipeline gets bunked.
+Cuando trabajas con tus datos, sea en recolección, limpieza, transformaciones, o análisis, puede que ya trabajes de una forma que es auto-documentante. Esto ocurre cuando estas escribiendo codigo y no ocupando herramientas de 'point & click' (GUI  - Graphical User Interface). La ventaja de esto es que es reproducible, la desventaja es que si tienes la version incorrecta toda linea de produccion de tu estudio se estanca. 
 
 A fairly common workflow setup can be seen [here](https://bids.github.io/2017-01-12-ucb/lessons/R/reproducible_workflow.html). If you teach undergrads, check out [Project TIER](http://www.projecttier.org/)'s protocol.  
 
