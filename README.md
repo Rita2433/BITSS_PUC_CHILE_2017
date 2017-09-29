@@ -1,7 +1,10 @@
-# IMEBESS Reproducibility Training
-by [Garret Christensen](http://www.ocf.berkeley.edu/~garret)
+# PUC Taller de Reproducibilidad  
+[Fernando Hoces de la Guardia](http://fhoces.github.io)
 
-UC Berkeley ([Berkeley Initative for Transparency in the Social Sciences](http://www.bitss.org), [Berkeley Institute for Data Science](http://bids.berkeley.edu))
+UC Berkeley ([Berkeley Initative for Transparency in the Social Sciences](http://www.bitss.org))
+
+Gracias a [Garret Christensen](http://www.ocf.berkeley.edu/~garret) por proveer el material original para este entrenamiento.
+
 ### Materials for the 2017 Reproducibility Training at IMEBESS
 Software installation is required. Instructions are [here](https://github.com/BITSS/IMEBESS2017). Please do your best to install the programs *before* coming to the workshop, though help will be available if you run into trouble.
 
