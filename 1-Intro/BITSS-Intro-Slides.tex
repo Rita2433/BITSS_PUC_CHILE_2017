@@ -733,8 +733,7 @@ Utilizar control de versiones puede ayudar a hacer su trabajo más reproducible.
 Qué es Control de Versiones?
 
 \begin{quote}
-Control de versiones es un sistema que registra cambios a uno o varios archivos en el tiempo, de forma tal que versiones especifica pueden ser recuperados más adelante 
-Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
+Control de versiones es un sistema que registra cambios a uno o varios archivos en el tiempo, de forma tal que versiones especifica pueden ser recuperados más adelante.
 \end{quote}
 --Git, \href{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}{About Version Control}
 %\item Distributed Version Control Systems (DCVS) let multiple users control the same files in this manner.
@@ -774,15 +773,17 @@ Version control is a system that records changes to a file or set of files over 
 }
 
 
-\begin{frame}{Dynamic Documents}
-Write your code and your paper in the same file so you won't lose information or make copy and paste mistakes.
+\begin{frame}{Documentos Dinámicos}
 
-Possible in R and Stata.
+Meta aspiracional: Escriba su código y su paper en el mismo archivo. De esta forma se minimiza la perdida de información y se eliminan errores de copiar/pegar.
+
+\medskip
+Establecido en R/Python y comenzando en Stata.
 \begin{itemize}[<.->]
-\item Include tables by linking to a file, instead of a static image.
-\item Include number by linking to a value calculated by an analysis file, instead of a static number typed manually.
-\item Automatically update tables and numbers.
-\item Produce entire paper with one or two clicks.
+\item Incluye tablas dentro del archivo, en lugar de copiar-pegar-formatear elementos estáticos
+\item Todas las cifras dentro del texto también son calculadas de manera dimanica, eliminando la necesidad de tipeo de cifras manualmente.
+\item Cifras y tablas se actualizan automáticamente.
+\item El paper completo es (re)producido con uno o dos clicks
 \end{itemize} 
 \end{frame}
 
@@ -808,59 +809,60 @@ Possible in R and Stata.
      \end{frame}
 }
 
-\subsection*{Data Sharing}
-\begin{frame}{Data Sharing}
-Post your code and your data in a trusted public repository.
-\begin{itemize}[<.->]
+\subsection*{Compartiendo lo Datos}
+\begin{frame}{Compartiendo lo Datos}
+Publique su codigo y sus datos en un repositorio publico de confianza.\begin{itemize}[<.->]
 \item
-Find the appropriate repository: \url{http://www.re3data.org/}
+Encuentre el repositorio apropiado: \url{http://www.re3data.org/}
 \item
-Repositories will last longer than your own website.
+Los repositorios están diseñados para durar más que su website.
 \item
-Repositories are more easily searchable by other researchers.
+También están diseñados para facilitar la búsqueda por parte de otros investigadores.
 \item
-Repositories will store your data in a non-proprietary format that won't become obsolete.
+Los repositorios guardan sus datos en formatos publicos que evitan obsolescencia en el tiempo.
 \end{itemize}
 \end{frame}
 
-\section{Conclusion}
-\begin{frame}{Conclusion}
-OK, I'm convinced. How do I implement this in my own research?
+\section{Conclusión}
+\begin{frame}{Conclusión}
+OK, estoy convencido. Como puedo implementar esto en mi propia investigación?
 
 \begin{itemize}[<.->]
-\item Read the manual I wrote.\href{https://github.com/garretchristensen/BestPracticesManual}{\beamergotobutton{Link}}
-\item Subscribe to the BITSS blog \& E-mail list \href{https://bitss.org/blog}{\beamergotobutton{Link}}
-\item Apply for our NIH Summer Institute. \href{http://www.bitss.org/events/summer-institute/}{\beamergotobutton{Link}}
-\item Apply for our SSMART Grants (extra funding for developing country researchers). \href{http://www.bitss.org/ssmart-grants/}{\beamergotobutton{Link}}
-\item Apply for our Leamer-Rosenthal Prizes. \href{http://www.bitss.org/lr-prizes/}{\beamergotobutton{Link}}
-\item Free stats consulting from COS. \href{https://cos.io/stats_consulting/}{\beamergotobutton{Link}}
+\item Tomen nuestro MOOC (E. Miguel).\href{https://www.futurelearn.com/courses/open-social-science-research}{\beamergotobutton{Link}}
+\item Suscribance al blog \& E-mail de BITSS \href{https://bitss.org/blog}{\beamergotobutton{Link}}
+\item Apliquen a nuestro summer institute: RT2. \href{http://www.bitss.org/events/summer-institute/}{\beamergotobutton{Link}}
+\item Apliquen a nuestros fondos de investigacion SSMART (fondos adicionales para investigadores de paises en desarrollo). \href{http://www.bitss.org/ssmart-grants/}{\beamergotobutton{Link}}
+\item Apliquen al premio Leamer-Rosenthal. \href{http://www.bitss.org/lr-prizes/}{\beamergotobutton{Link}}
+\item Revisen nuestra pagina de recursos. \href{http://www.bitss.org/resource-tag/education/}{\beamergotobutton{Link}}
+\item Interesado en incluir parte de estas practicas en el análisis de políticas publicas? Hablen conmigo! \href{mailto:fhoces@berkeley.edu}{fhoces@berkeley.edu}
+
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Summer Institute}
-Three days of training in June at UC Berkeley, or two days of training in July at the University of Michigan.
-\includegraphics[width=4in]{../Images/bitss-2014-cohort2.jpg}
+\begin{frame}{RT2}
+Tres días de entrenamiento. Evento anual que alterna entre Berkeley y fuera de USA (Londres fue hace dos semanas)
+'\includegraphics[width=4in]{../Images/bitss-2014-cohort2.jpg}
 \end{frame}
 
-\begin{frame}{SSMART Grant}
-Up to \$30,000 grant for a research project on:
+\begin{frame}{Fondos SSMART}
+Fondos de hasta \$30,000 para financiar investigación en transparencia:
 \begin{itemize}[<.->]
-\item Develop new methodology
-\item New tools and approaches for meta-analysis
-\item Research on researchers and adoption of new norms
+\item Desarrollo de nuevas metodologías
+\item Nuevas herramientas y usos de meta-análisis
+\item Investigación sobre comportamiento de investigadores y adopción de nuevas normas
 \end{itemize}
-Extra funding source for researchers from developing countries.
+Financiamiento extra para investigadores de paises en desarrollo.
 
 \includegraphics[width=2.5in]{../Images/LRwinners.jpg}
 \end{frame}
 
-\begin{frame}{Leamer-Rosenthal Prizes}
-Up to \$10,000 prize for completed transparent research in the social sciences,
-especially:
+\begin{frame}{Premio Leamer-Rosenthal}
+Reconocimiento a investigadores que han completado estudios en/sobre transparencia y reproducibilidad en ciencias sociales,
+Ejemplos:
 \begin{itemize}[<.->]
-\item Economics
-\item Political Science
-\item Psychology
+\item Psicología
+\item Ciencias Políticas
+\item Economía
 \end{itemize}
 \includegraphics[width=2.5in]{../Images/leamer1-zoomed33.jpg}
 \end{frame}
@@ -868,11 +870,11 @@ especially:
 
 \begin{frame}
 \begin{center}
-Questions?
-\vspace{1in}
+Preguntas?
+\vspace{0.5in}
 
 
-\Huge{Thank you!}
+\Huge{Muchas Gracias}
 \end{center}
 \end{frame}
 
