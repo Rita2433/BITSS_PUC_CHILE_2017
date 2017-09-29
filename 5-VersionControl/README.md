@@ -1,31 +1,33 @@
 <!--YAML HEADER
 ---
-title : Introduction to git using GitHub Desktop
-part of : BITSS New Delhi March 2017 Workshop
+title : Introduccion a Git utilizando Github Desktop
+part of : BITSS PUC-Chile
 time : 3 hours
 author: Garret Christensen
 affiliation: UC Berkeley
 ---
 -->
 
-Git & GitHub Desktop Workshop
+Taller de Git & GitHub Desktop
 ==============================
-BITSS IMEBESS 2017
+BITSS PUC-Chile 2017
 ------------------------------
-by Garret Christensen
+Fernando Hoces de la Guardia
 
-Thanks to [Dillon Niederhut](https://github.com/deniederhut/BITSS2016) and [Justin Kitzes](https://bids.github.io/2017-01-12-ucb/lessons/git/) for some original materials.
+Gracias a [Garret Christensen](http://www.ocf.berkeley.edu/~garret) por proveer el material original para este entrenamiento.
 
-Essentially, we are trying to avoid a situation like this one :
-
+Básicamente, estamos tratando de evitar una situación como esta:
 ![http://www.phdcomics.com/comics/archive/phd101212s.gif](http://www.phdcomics.com/comics/archive/phd101212s.gif)
 
-And move to a situation more like this one:
+Y acercarnos un poco a esto:
 
 ![Git xkcd comic](https://imgs.xkcd.com/comics/git.png)
 
 
-### Background:
+### Contexto:
+
+
+
 At a fundamental level, the problem is that we do not create perfect products the first time around. We add to them, remove things from them, and revise them heavily. For word processing tasks, like the PhD Comics example, this is somewhat harmless, and really is only costing you time in finding the correct document, or some embarrassment if you send the wrong document to a colleague.
 
 You may already be collecting, cleaning, reshaping, and analyzing your data in a way that is self documenting. That is to say, you are writing it in code, and are not modifying pieces of it by hand or in a GUI. The upside to this is reproducibility. The downside is that if any of your code is the wrong version, your whole pipeline gets bunked.
