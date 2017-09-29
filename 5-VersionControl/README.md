@@ -32,14 +32,16 @@ Cuando trabajas con tus datos, sea en recolección, limpieza, transformaciones, 
 
 Una forma relativamente común de definir tu flujo de trabajo se puede encontrar [aqui](https://bids.github.io/2017-01-12-ucb/lessons/R/reproducible_workflow.html). Si hacen clases en pre-grado, miren el protocolo del [Project TIER](http://www.projecttier.org/).  
 
-La meta aspiracional es que yo debería ser capaz de entrar en tu laboratorio en la noche, borrar todos tus archivos excepto tu código y datos originales, y tu deberías ser capaz de ejecutar un solo comando para regenerar TODO, incluyendo todos los resultados, tablas y figuras en su forma final. Esto es lo que se entiende por flujo de trabajo de un-click.
+La meta aspiracional es que yo debería ser capaz de entrar en tu laboratorio en la noche, borrar todos tus archivos excepto tu código y datos originales, y tu deberías ser capaz de ejecutar un solo comando para regenerar TODO, incluyendo todos los resultados, tablas y figuras en su forma final. Esto es lo que se entiende por 'flujo de trabajo de un-click'.
 
 
-Unlike the situation above, when you can't find the right version of your processing pipeline, analytical workflow, or data, you also lose the ability to recreate any results that you've generated. If your results are not reproducible, then they are also :
+En el otro extremo, cuando no puedes encontrar la version correcta de tu procesacimento o analsis de datos, pierdes la habilidad de recrear cualquier resultado que fue generado en el pasado. Si tus resultados no son reproducibles, tambien adolecen de los siguientes problemas:
 
-1. Not verifiable
-2. Not explainable
-3. not extendable
+1. No son verificables
+2. Son mas difíciles de explicar
+3. No son extendibles
+
+
 
 So, we need a way to know which version of our pipeline we are using and what has changed since the last version. There are many potential solutions in this space. Some people organize their revisions by hand into series of separate folders. Others use software that logs every action they take (SPSS or STATA output logs). Yet others prefer some kind of track-changes function in their GUI.
 
