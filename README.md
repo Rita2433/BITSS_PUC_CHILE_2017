@@ -5,7 +5,8 @@ UC Berkeley ([Berkeley Initative for Transparency in the Social Sciences](http:/
 
 Gracias a [Garret Christensen](http://www.ocf.berkeley.edu/~garret) por proveer el material original para este entrenamiento.
 
-### Materials for the 2017 Reproducibility Training at IMEBESS
+### Materiales para el taller de reproducibilidad en PUC-Chile
+ Materials for the 2017 Reproducibility Training at IMEBESS
 Software installation is required. Instructions are [here](https://github.com/BITSS/IMEBESS2017). Please do your best to install the programs *before* coming to the workshop, though help will be available if you run into trouble.
 
 1-Intro has slides to introduce researchers to the problems of publication bias and p-hacking.
@@ -27,11 +28,8 @@ Workshop Agenda
 
 Time | Session |
 ------------ | ------------- |
-10:00-10:15 | Welcome and introductions |
-10:15-11:15 |Overview of transparency and reproducibility in social science research |
+9:00-10:15 | Pre-registration with the AEA registry and the Open Science Framework|
+10:15-10:30 | COFFEE BREAK |
+10:30-11:45 | Dynamic documents with R (using RMarkdown + brief references to Stata) |
 11:15-11:30 | COFFEE BREAK |
-11:30-12:30 | Registration & Pre-Analsysis Plans (AEA Registry, OSF) |
-12:30-1:30pm | LUNCH BREAK |
-1:30-3:30 | Dynamic Documents in Stata and R Studio |
-3:30-3:45 | COFFEE BREAK |
-3:45-5:30 | Version Control with Git/Github|
+12:00-13:00 | Version control with Git and GitHub |
