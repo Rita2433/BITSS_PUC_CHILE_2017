@@ -26,7 +26,7 @@ Y acercarnos un poco a esto:
 
 ### Contexto:
 
-
+A un nivel fundamental, el problema es que rara vez creamos productos perfectos en el primer intento. Añadimos, borramos y revisamos constantemente. En el caso de tareas de procesar texto, como en el ejemplo de PhD Comics, las consecuencias son menores, como el tiempo que te toma en encontrar el archivo correcto, o la vergüenza de enviar la versión incorrecta a un colega.
 
 At a fundamental level, the problem is that we do not create perfect products the first time around. We add to them, remove things from them, and revise them heavily. For word processing tasks, like the PhD Comics example, this is somewhat harmless, and really is only costing you time in finding the correct document, or some embarrassment if you send the wrong document to a colleague.
 
