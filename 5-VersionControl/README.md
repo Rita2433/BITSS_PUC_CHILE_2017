@@ -35,15 +35,16 @@ Una forma relativamente común de definir tu flujo de trabajo se puede encontrar
 La meta aspiracional es que yo debería ser capaz de entrar en tu laboratorio en la noche, borrar todos tus archivos excepto tu código y datos originales, y tu deberías ser capaz de ejecutar un solo comando para regenerar TODO, incluyendo todos los resultados, tablas y figuras en su forma final. Esto es lo que se entiende por 'flujo de trabajo de un-click'.
 
 
-En el otro extremo, cuando no puedes encontrar la versión correcta de tu procesacimento o analsis de datos, pierdes la habilidad de recrear cualquier resultado que fue generado en el pasado. Si tus resultados no son reproducibles, tambien adolecen de los siguientes problemas:
+En el otro extremo, cuando no puedes encontrar la versión correcta de tu procesacimento o análisis de datos, pierdes la habilidad de recrear cualquier resultado que fue generado en el pasado. Si tus resultados no son reproducibles, también adolecen de los siguientes problemas:
 
 1. No son verificables
 2. Son mas difíciles de explicar
-3. No son extendibles
+3. No son extendible
 
 
+Por esta razón, necesitamos saber cual es la versión exacta que estamos utilizando y que ha cambiado con respecto a la versión previa. Hay muchas soluciones en este espacio. Algunos mantienen diferentes revisiones manualmente, separando todo en una serie de carpetas. Otros ocupan sowftware que registra cada acción tomada (STATA o SPPS 'logs'). También hay quienes utilizan alguna función del tipo 'control de cambios' en su GUI (Graphical User Interface).
 
-So, we need a way to know which version of our pipeline we are using and what has changed since the last version. There are many potential solutions in this space. Some people organize their revisions by hand into series of separate folders. Others use software that logs every action they take (SPSS or STATA output logs). Yet others prefer some kind of track-changes function in their GUI.
+
 
 These solutions all suffer the same problem in that they force you, the user, to think about what a version is and how you are managing changes between versions. For example, if you are documenting your workflow with SPSS logs, if you want to know how you got that result you found one time last week, you have to manually search through the output from that entire day to find the code you ran but also all of the code that you ran to may or may not have led up to that result.
 
