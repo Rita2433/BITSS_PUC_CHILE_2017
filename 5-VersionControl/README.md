@@ -39,24 +39,23 @@ En el otro extremo, cuando no puedes encontrar la versión correcta de tu proces
 
 1. No son verificables
 2. Son mas difíciles de explicar
-3. No son extendible
+3. No son extendibles
 
 
-Por esta razón, necesitamos saber cual es la versión exacta que estamos utilizando y que ha cambiado con respecto a la versión previa. Hay muchas soluciones en este espacio. Algunos mantienen diferentes revisiones manualmente, separando todo en una serie de carpetas. Otros ocupan sowftware que registra cada acción tomada (STATA o SPPS 'logs'). También hay quienes utilizan alguna función del tipo 'control de cambios' en su GUI (Graphical User Interface).
+Por esta razón, necesitamos saber cual es la versión exacta que estamos utilizando y que ha cambiado con respecto a la versión previa. Hay muchas soluciones en este espacio. Algunos mantienen diferentes revisiones manualmente, separando todo en una serie de carpetas. Otros ocupan software que registra cada acción tomada (STATA o SPPS 'logs'). También hay quienes utilizan alguna función del tipo 'control de cambios' en su GUI (Graphical User Interface).
 
 
+Todas estas soluciones adolecen del mismo problema, en tanto obligan al usuario a pensar que es una versión y como se deben manejar cambios a través de versiones. Por ejemplo si estas documentando tu flujo de trabajo en logs (SPSS o STATA) y quieres saber de donde salió ese resultado que generaste la semana pasada, tienes que manualmente buscar en el log de el día en cuestión, más todos los logs que potencialmente te pudieron llevado a generar ese resultado.
 
-These solutions all suffer the same problem in that they force you, the user, to think about what a version is and how you are managing changes between versions. For example, if you are documenting your workflow with SPSS logs, if you want to know how you got that result you found one time last week, you have to manually search through the output from that entire day to find the code you ran but also all of the code that you ran to may or may not have led up to that result.
-
-Git, or `git`, is software that abstracts away those details. is a version control program that helps you very accurately keep track of changes to text files, with or without collaborators. Note that .txt, .do, .R, .md, and many other files are actually text files. Others like .doc, .docx, .xls, .xlsx, .pdf, .dta, are not text files. So there's huge value in using Git and Github for your Stata script (.do) files, but there's little value in using it with your data (.dta) files. However, `git` is not particularly intuitive or user friendly. In fact, the author of `git` likes to joke that its name is a reference to how obstinate and curmudgeonly it is. The downsides here are:
+Git, or `git`, es un software que elimina ese problema. Es un programa de control de versiones que te ayuda, de manera muy precisa, a registrar *todos* los cambios en archivos de texto, con o sin colaboradores. Noten que `.txt, .do, .R, .md, .tex`, y muchos otros formatos son archivos de texto. Otros formatos como `.doc, .docx, .xls, .xlsx, .pdf, .dta` no son archivos de texto (`.csv` es complicado, pero la respuesta corta es no). De esta forma hay un alto valor en utilizar Git o Gihub en archivos con codigo (.do), pero no hay mucho valor en usarlo en archivos con datos (.dta). La mayor barrera para la adopción masiva de Git en la comunidad cientifica (publicado por primera vez en el 2005) es que no es particularmente intuitivo. Sus desventajas son:
 
 1. Hard to understand
 2. Hard to use correctly
 
-However, the upsides are:
+Y sus ventajas son:
 
-1. Never ever accidentally deleting or otherwise losing a file
-2. Always being able to revert to your last working pipeline
+1. Nunca mas vas a borrar o perder un archivo de manera accidental.
+2. Siempre vas a ser capaz de volver Always being able to revert to your last working pipeline
 3. Easy to discover what has changed (i.e. gone wrong), and when
 
 Luckily for us, GitHub has built a GUI that makes working with `git` easier, although at some power cost. Many experienced users use the command line (Terminal on a Mac, Git Shell or Git Bash on Windows) to run Git, but GitHub Dekstop can do some of the simpler tasks, and that's what we'll use.
