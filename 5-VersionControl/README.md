@@ -47,17 +47,18 @@ Por esta razón, necesitamos saber cual es la versión exacta que estamos utiliz
 
 Todas estas soluciones adolecen del mismo problema, en tanto obligan al usuario a pensar que es una versión y como se deben manejar cambios a través de versiones. Por ejemplo si estas documentando tu flujo de trabajo en logs (SPSS o STATA) y quieres saber de donde salió ese resultado que generaste la semana pasada, tienes que manualmente buscar en el log de el día en cuestión, más todos los logs que potencialmente te pudieron llevado a generar ese resultado.
 
-Git, or `git`, es un software que elimina ese problema. Es un programa de control de versiones que te ayuda, de manera muy precisa, a registrar *todos* los cambios en archivos de texto, con o sin colaboradores. Noten que `.txt, .do, .R, .md, .tex`, y muchos otros formatos son archivos de texto. Otros formatos como `.doc, .docx, .xls, .xlsx, .pdf, .dta` no son archivos de texto (`.csv` es complicado, pero la respuesta corta es no). De esta forma hay un alto valor en utilizar Git o Gihub en archivos con codigo (.do), pero no hay mucho valor en usarlo en archivos con datos (.dta). La mayor barrera para la adopción masiva de Git en la comunidad cientifica (publicado por primera vez en el 2005) es que no es particularmente intuitivo. Sus desventajas son:
+Git, or `git`, es un software que elimina ese problema. Es un programa de control de versiones que te ayuda, de manera muy precisa, a registrar *todos* los cambios en archivos de texto, con o sin colaboradores. Noten que `.txt, .do, .R, .md, .tex`, y muchos otros formatos son archivos de texto. Otros formatos como `.doc, .docx, .xls, .xlsx, .pdf, .dta` no son archivos de texto (`.csv` es complicado, pero la respuesta corta es no). De esta forma hay un alto valor en utilizar Git o Gihub en archivos con codigo (.do), pero no hay mucho valor en usarlo en archivos con datos (.dta). La mayor barrera para la adopción masiva de Git en la comunidad científica (publicado por primera vez en el 2005) es que no es particularmente intuitivo. Sus desventajas son:
 
-1. Hard to understand
-2. Hard to use correctly
+1. Difícil de entender
+2. Difícil de usar correctamente
 
 Y sus ventajas son:
 
 1. Nunca mas vas a borrar o perder un archivo de manera accidental.
-2. Siempre vas a ser capaz de volver Always being able to revert to your last working pipeline
-3. Easy to discover what has changed (i.e. gone wrong), and when
+2. Siempre vas a ser capaz de volver a la version anterior en tu flujo de trabajo.
+3. Facil descubir que ha cambiado (i.e. origen del problema), y cuando
 
+Afortunadamente para nosotros, Github y otras compañias han creado programas que apuntan a proveer accesso a git de manera amigable para el usario.  
 Luckily for us, GitHub has built a GUI that makes working with `git` easier, although at some power cost. Many experienced users use the command line (Terminal on a Mac, Git Shell or Git Bash on Windows) to run Git, but GitHub Dekstop can do some of the simpler tasks, and that's what we'll use.
 
 We'll likely have to use the command line to do something. If that's scary, help is [here](http://swcarpentry.github.io/shell-novice/02-filedir/), or don't be afraid to ask.
