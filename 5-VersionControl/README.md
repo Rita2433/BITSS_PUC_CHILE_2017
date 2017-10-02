@@ -55,24 +55,23 @@ Git, or `git`, es un software que elimina ese problema. Es un programa de contro
 Y sus ventajas son:
 
 1. Nunca mas vas a borrar o perder un archivo de manera accidental.
-2. Siempre vas a ser capaz de volver a la version anterior en tu flujo de trabajo.
-3. Facil descubir que ha cambiado (i.e. origen del problema), y cuando
+2. Siempre vas a ser capaz de volver a la versión anterior en tu flujo de trabajo.
+3. Fácil descubrir que ha cambiado (i.e. origen del problema), y cuando
 
-Afortunadamente para nosotros, Github y otras compañias han creado programas que apuntan a proveer acceso a git de manera amigable para el usuario.
+Afortunadamente para nosotros, Github y otras compañías han creado aplicaciones que apuntan a proveer acceso a git de manera amigable para el usuario. Usuarios con mas experiencia usan Git en la linea de comandos (Terminal en Mac y Git Shell/Bash en Windows). Pero estas aplicaciones pueden llevar a cabo las principales funciones de Git, lo cual es suficiente para nuestras necesidades.
 
+Puede que necesitemos utilizar la linea de comandos para hacer algunas cosas. [Aquí](http://swcarpentry.github.io/shell-novice/02-filedir/) hay algo de ayuda, y no dudes en preguntar.
 
+### Antes de empezar:
 
-Luckily for us, GitHub has built a GUI that makes working with `git` easier, although at some power cost. Many experienced users use the command line (Terminal on a Mac, Git Shell or Git Bash on Windows) to run Git, but GitHub Dekstop can do some of the simpler tasks, and that's what we'll use.
+* Asegurence de tener un editor de texto en su computador.
+  * **Windows:** Notedad
+  * **Mac:** Textedit -  cambien los defaults como se indica [aqui](http://www.iphonehacks.com/2017/06/plain-text-mode-textedit-mac.html). O instalen un editor.
+Recomiendo [Atom](http://atom.io) (el editor de do-files de Stata también funciona).
 
-We'll likely have to use the command line to do something. If that's scary, help is [here](http://swcarpentry.github.io/shell-novice/02-filedir/), or don't be afraid to ask.
+* Descargar e instalar el [GitHub Desktop app](http://desktop.github.com).
 
-### To get started:
-
-* Download and install a good text editor like [Atom](http://atom.io). (If you can. If you're using a computer with install limitations, just use the built-in editor.)
-
-* Download and install the [GitHub Desktop app](http://desktop.github.com).
-
-* [Create](https://github.com/join?source=header-home) a Github.com account and username.
+* [Crear](https://github.com/join?source=header-home) una cuenta en Github.com.
 
 ## Forking
 
