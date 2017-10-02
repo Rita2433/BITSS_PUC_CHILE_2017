@@ -35,7 +35,7 @@ Una forma relativamente común de definir tu flujo de trabajo se puede encontrar
 La meta aspiracional es que yo debería ser capaz de entrar en tu laboratorio en la noche, borrar todos tus archivos excepto tu código y datos originales, y tu deberías ser capaz de ejecutar un solo comando para regenerar TODO, incluyendo todos los resultados, tablas y figuras en su forma final. Esto es lo que se entiende por 'flujo de trabajo de un-click'.
 
 
-En el otro extremo, cuando no puedes encontrar la version correcta de tu procesacimento o analsis de datos, pierdes la habilidad de recrear cualquier resultado que fue generado en el pasado. Si tus resultados no son reproducibles, tambien adolecen de los siguientes problemas:
+En el otro extremo, cuando no puedes encontrar la versión correcta de tu procesacimento o analsis de datos, pierdes la habilidad de recrear cualquier resultado que fue generado en el pasado. Si tus resultados no son reproducibles, tambien adolecen de los siguientes problemas:
 
 1. No son verificables
 2. Son mas difíciles de explicar
