@@ -65,7 +65,7 @@ Puede que necesitemos utilizar la linea de comandos para hacer algunas cosas. [A
 ### Antes de empezar:
 
 * Asegurence de tener un editor de texto en su computador.
-  * **Windows:** Notedad
+  * **Windows:** Notepad
   * **Mac:** Textedit -  cambien los defaults como se indica [aqui](http://www.iphonehacks.com/2017/06/plain-text-mode-textedit-mac.html). O instalen un editor.
 Recomiendo [Atom](http://atom.io) (el editor de do-files de Stata también funciona).
 
