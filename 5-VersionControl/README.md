@@ -58,7 +58,7 @@ Y sus ventajas son:
 2. Siempre vas a ser capaz de volver a la version anterior en tu flujo de trabajo.
 3. Facil descubir que ha cambiado (i.e. origen del problema), y cuando
 
-Afortunadamente para nosotros, Github y otras compañias han creado programas que apuntan a proveer accesso a git de manera amigable para el usario.
+Afortunadamente para nosotros, Github y otras compañias han creado programas que apuntan a proveer acceso a git de manera amigable para el usuario.
 
 
 
