@@ -58,7 +58,10 @@ Y sus ventajas son:
 2. Siempre vas a ser capaz de volver a la version anterior en tu flujo de trabajo.
 3. Facil descubir que ha cambiado (i.e. origen del problema), y cuando
 
-Afortunadamente para nosotros, Github y otras compañias han creado programas que apuntan a proveer accesso a git de manera amigable para el usario.  
+Afortunadamente para nosotros, Github y otras compañias han creado programas que apuntan a proveer accesso a git de manera amigable para el usario.
+
+
+
 Luckily for us, GitHub has built a GUI that makes working with `git` easier, although at some power cost. Many experienced users use the command line (Terminal on a Mac, Git Shell or Git Bash on Windows) to run Git, but GitHub Dekstop can do some of the simpler tasks, and that's what we'll use.
 
 We'll likely have to use the command line to do something. If that's scary, help is [here](http://swcarpentry.github.io/shell-novice/02-filedir/), or don't be afraid to ask.
