@@ -79,15 +79,13 @@ Vamos a ocupar nuestra nueva cuenta de Github para hacer *fork* `fork`<sup>1</su
 
 * Vayan a [https://github.com/fhoces/BITSS_PUC_CHILE_2017](https://github.com/fhoces/BITSS_PUC_CHILE_2017)
 
-AQUI VOY
-* Look for a button that says "fork" in the upper right-hand corner
-* Click it!
+* Busquen el botón que dice 'fork' en la esquina superior derecha y hagan click
 
-This repository will then be copied to your own account (*not* your computer), so that you can make changes to it if you like. Since the fork exists on GitHub's servers, any changes that you push to those servers means those changes are already backed up for you.
+Este repositorio va a ser copiado a tu cuenta (pero **no** a tu computador), permitiendo modificarlo como lo desees. Dado que el 'fork' vive en los servidores de Github, cualquier cambio que se hagan a esos servidores ya van a estar respaldados para ti.
 
-* To avoid confusion, change the name of the repository to something like `GitWorkshop` by clicking on settings. *By they way: what's a "repository"?*
+* Para evitar confusiones, cambien el nombre del repositorio a algo así como `GitTaller` en la seccione de settings.
 
-### Cloning, Creating, and Changing:
+### Clonando, Creando y Modificando
 The options in the Github app under the "+" button are to add, create, or clone a repository. *Adding* is finding and telling the app that a repository is already on your computer. *Creating* creates a new repository. *Cloning* is copying an existing repository from your GitHub account.
 
 To clone a public repository that doesn't belong to you, click the download button that is just to the left of the "Download ZIP" button on the repository's GitHub.com page, or drag and drop the URL from your browser into the open GitHub Desktop app (oddly, there is no way to type the URL directly into the app.)  
