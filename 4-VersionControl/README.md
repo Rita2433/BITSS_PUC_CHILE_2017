@@ -75,16 +75,13 @@ Como [Atom](http://atom.io), Sublime o Notepad++ (el editor de do-files de Stata
 
 ## Forking
 
-Vamos a ocupar nuestra nueva cuenta de Github para hacer *forking* We're going to use our new GitHub account to `fork`<sup>1</sup> a repository -- a repository for this workshop, as it just so happens!
+Vamos a ocupar nuestra nueva cuenta de Github para hacer *fork* `fork`<sup>1</sup> de un respositorio -- el mismo repositorio en el cual fue creado este taller!
 
-* Navigate to [github.com/BITSS/WorldBankFeb2017](github.com/BITSS/WorldBankFeb2017)
+* Vayan a [https://github.com/fhoces/BITSS_PUC_CHILE_2017](https://github.com/fhoces/BITSS_PUC_CHILE_2017)
+
+AQUI VOY
 * Look for a button that says "fork" in the upper right-hand corner
 * Click it!
-
-A footnote [^1]    
-
-[^1]: Here is the footnote.  
-
 
 This repository will then be copied to your own account (*not* your computer), so that you can make changes to it if you like. Since the fork exists on GitHub's servers, any changes that you push to those servers means those changes are already backed up for you.
 
