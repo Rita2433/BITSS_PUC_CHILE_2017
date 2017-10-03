@@ -86,20 +86,18 @@ Este repositorio va a ser copiado a tu cuenta (pero **no** a tu computador), per
 * Para evitar confusiones, cambien el nombre del repositorio a algo así como `GitTaller` en la seccion de settings.
 
 ### Clonando, Creando y Modificando
-Las opciones en la app de Github (desktop) bajo el boton '+' son: añadir, crear o clonar un repositorio.
+Las opciones en la app de Github (desktop) bajo el botón '+' son: añadir, crear o clonar un repositorio. *Añadir* busca un repositorio en tu computador y le dice a la app que lo añada al listado de repositorio que esta siguiendo. *Crear* crea un nuevo repositorio: una carpeta en tu computador y lo añade automáticamente al listado de repositorios a seguir. *Clonar* copia un repositorio de tu cuenta en github.com en tu computador.  
 
-The options in the Github app under the "+" button are to add, create, or clone a repository. *Adding* is finding and telling the app that a repository is already on your computer. *Creating* creates a new repository. *Cloning* is copying an existing repository from your GitHub account.
+Para clonar un repositorio publico que no te pertenece, haz click en el botón de descarga que esta justo a la izquierda del botón 'Download ZIP' en la pagina del repositorio en GitHub.com.
 
-To clone a public repository that doesn't belong to you, click the download button that is just to the left of the "Download ZIP" button on the repository's GitHub.com page, or drag and drop the URL from your browser into the open GitHub Desktop app (oddly, there is no way to type the URL directly into the app.)  
+* Clonen el fork que hicieron del repositorio de este taller. Luego naveguen en su computador para verificar que esta ahí.
 
-* Clone your fork of the workshop repository. Navigate to it on your computer to verify that it's there.
+* Qué archivos ven ahí? Hay algún archivo que no saben lo que es (`.gitignore`)? Si no, prueben esto: [[Mac](http://www.macworld.co.uk/how-to/mac-software/how-show-hidden-files-in-mac-os-x-finder-funter-macos-sierra-3520878/)][[Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files)]
+Si ven estos archivos escondidos, *nunca jamas* los deben tocar (aquí es donde git guarda todo el historial de cambios).
 
-* What files are in there? Do you see anything you don't understand? If not, try this: [[Mac](http://www.macworld.co.uk/how-to/mac-software/how-show-hidden-files-in-mac-os-x-finder-funter-macos-sierra-3520878/)][[Windows](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files)]
-If you do see the hidden files, *never ever ever* mess with them.
+Felicitaciones! han clonado exitosamente su primer repositorio. Ahora vamos a *crear* un repositorio nuevo.
 
-Now that you've successfully cloned a repository, we'll create our own.
-
-* Create a new repository. Give it a name like `codepoetry_<yourname>` *What files are in it?*
+* Creen un nuevo repositorio. denle un nombre como `primer_repo_tunombre` *What files are in it?*
 * Create a text file called `README.md` using your text editor. Give the file three lines of text:
 
 >Turning and turning in the widening gyre
