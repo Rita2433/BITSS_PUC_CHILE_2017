@@ -83,9 +83,11 @@ Vamos a ocupar nuestra nueva cuenta de Github para hacer *fork* `fork`<sup>1</su
 
 Este repositorio va a ser copiado a tu cuenta (pero **no** a tu computador), permitiendo modificarlo como lo desees. Dado que el 'fork' vive en los servidores de Github, cualquier cambio que se hagan a esos servidores ya van a estar respaldados para ti.
 
-* Para evitar confusiones, cambien el nombre del repositorio a algo así como `GitTaller` en la seccione de settings.
+* Para evitar confusiones, cambien el nombre del repositorio a algo así como `GitTaller` en la seccion de settings.
 
 ### Clonando, Creando y Modificando
+Las opciones en la app de Github (desktop) bajo el boton '+' son: añadir, crear o clonar un repositorio.
+
 The options in the Github app under the "+" button are to add, create, or clone a repository. *Adding* is finding and telling the app that a repository is already on your computer. *Creating* creates a new repository. *Cloning* is copying an existing repository from your GitHub account.
 
 To clone a public repository that doesn't belong to you, click the download button that is just to the left of the "Download ZIP" button on the repository's GitHub.com page, or drag and drop the URL from your browser into the open GitHub Desktop app (oddly, there is no way to type the URL directly into the app.)  
