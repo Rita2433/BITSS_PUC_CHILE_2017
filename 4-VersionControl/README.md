@@ -67,7 +67,7 @@ Puede que necesitemos utilizar la linea de comandos para hacer algunas cosas. [A
 * Asegurence de tener un editor de texto en su computador.
   * **Windows:** Notepad
   * **Mac:** Textedit -  cambien los defaults como se indica [aqui](http://www.iphonehacks.com/2017/06/plain-text-mode-textedit-mac.html). O instalen un editor.
-Recomiendo [Atom](http://atom.io) (el editor de do-files de Stata también funciona).
+Como [Atom](http://atom.io), Sublime o Notepad++ (el editor de do-files de Stata también funciona).
 
 * Descargar e instalar el [GitHub Desktop app](http://desktop.github.com).
 
@@ -75,7 +75,9 @@ Recomiendo [Atom](http://atom.io) (el editor de do-files de Stata también funci
 
 ## Forking
 
-We're going to use our new GitHub account to `fork`<sup>1</sup> a repository -- a repository for this workshop, as it just so happens!
+Vamos a ocupar nuestra nueva cuenta de Github para hacer *forking* We're going to use our new GitHub account to `fork`[^1]<sup>1</sup> a repository -- a repository for this workshop, as it just so happens!
+
+[^1]:For more on forking, see [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
 
 * Navigate to [github.com/BITSS/WorldBankFeb2017](github.com/BITSS/WorldBankFeb2017)
 * Look for a button that says "fork" in the upper right-hand corner
@@ -246,6 +248,3 @@ This is how you suggest changes to repositories to which you aren't a full fledg
 Many, if not most, experienced users will use Git via the command line. (Terminal on a Mac, the Git Shell that came with the Desktop app, Windows PowerShell, there are a lot of options. They're all where you type commands for your computer to execute.) You can read why [here](http://programmers.stackexchange.com/questions/173297/why-learn-git-when-there-are-gui-apps-for-github). Basically, it's more powerful.
 
 There are a million and one online tutorials for Git in the command line. [Software Carpentry's](http://swcarpentry.github.io/git-novice/) is good, as is [Atlassian's](https://www.atlassian.com/git/tutorials/). The basic stuff is all nicely summarized [here](http://rogerdudler.github.io/git-guide/) in a single page.
-
-
-**1.** For more on forking, see [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
