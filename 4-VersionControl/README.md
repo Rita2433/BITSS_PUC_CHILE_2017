@@ -97,7 +97,8 @@ Si ven estos archivos escondidos, *nunca jamas* los deben tocar (aquí es donde 
 
 Felicitaciones! han clonado exitosamente su primer repositorio. Ahora vamos a *crear* un repositorio nuevo.
 
-* Creen un nuevo repositorio. denle un nombre como `primer_repo_tunombre` *What files are in it?*
+* Creen un nuevo repositorio. denle un nombre como `primer_repo_tunombre` *Qué archivos ven ahí?*
+
 * Create a text file called `README.md` using your text editor. Give the file three lines of text:
 
 >Turning and turning in the widening gyre
