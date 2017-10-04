@@ -147,30 +147,27 @@ Github Desktop automáticamente añade los archivos al área de posicionamiento.
 
 * Hagan commit.
 
-* Add a sixth line to `README.md`:
->The ceremony of innocence is drowned;
+* Agregen otra linea al archivo `README.md`:
+> La sexta! linea de este creativo programa
 
-* Commit the change.
+* Hagan commit de este cambio.
 
 
-#### Undoing
-There are several ways to undo things with git, not all of which are possible with Github Desktop. The GH methods are to:
-1. Right click on the file on the file and Discard changes. *What areas is this dealing with? Note this is like `git reset filename` on the command line.*
+#### Deshacer
+Hay varias formas de deshacer en git, no todas de ellas son posibles en Github Desktop. Los métodos de GH son:
 
-2. Click on a change in the History section, and click on Revert.
+1. Click derecho sobre el archivo deseado y seleccione 'Discard changes'.
 
-3. Click on the settings gear and click Undo latest commit.
+2. Click en algún cambio en la sección 'History' y luego click en 'revert'.
 
-Yes, you can undo an undo. Just make sure when you are undoing changes that you are looking in your text editor at the most up to date version (close the file and reopen it.)
+3. Click en Undo inmediatamente después de un commit.
 
-But what if you'd like to undo *all* the changes back to a certain point? [This is not possible in Github Desktop.](http://stackoverflow.com/questions/34790794/going-back-to-a-previous-commit-in-github-desktop) For that you have to use the command line.
+* Reviertan el commit que aggrego la quinta linea en `README.md`.
 
-* Revert the commit that added the fifth line to `README.md`.
+* Reviertan la reversion de forma tal que vuevan a tener las 6 lineas completas en `README.md`.
 
-* Revert the revert so you have the full six lines of `README.md` again.
-
+<!--
 We'll try one quick command in the command line. (See the SWC lesson [here](https://swcarpentry.github.io/git-novice/05-history/).)
-
 * Open Git Shell (Windows) or Terminal (Mac).
 * Navigate (using `cd`) to inside the folder that is the repository.
 * Enter `git status` to make sure you're in your repository.
@@ -180,12 +177,16 @@ We'll try one quick command in the command line. (See the SWC lesson [here](http
 * To get the latest version back, type `git checkout HEAD <filename.txt>` or `git checkout master` which will send you to the tip of the `master` branch. (I know, we haven't talked about branches yet! So let's do that now.)
 
 Atlassian has a great [explanation](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting) of the differences between revert, reset, and checkout.  
+-->
 
 ### Branching:
-Git uses branches to let you experiment on new ideas or bug fixes.
+Git utiliza ramas (branches) para que puedas experimentar con ideas nuevas o corregir errores de codigo.
 
-* Create, name, and sync a new `experimental` branch with the 'create new branch' button.
-* Make changes to `regressions.do` making the regressions robust to heteroskedasticity, save, and commit them to `experimental`.
+* Crea, nombra y sincroniza una nueva rama de nombre`experimental` haciendo click en 'create new branch'.
+
+* Cambien el archivo `regressions.do` haciendo la regresion robusta a heterocedasticidad, guarden y hagan commit a la rama `experimental`.
+
+
 * Oh wait, no. Emergency, you have to go back to the main (master) branch.
 * Change a different part of `regressions.do`. Add a line at the end:
 `summ length`
