@@ -18,6 +18,9 @@
 
 \usepackage[utf8]{inputenc}
 % or whatever
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,angles,quotes}
+\usetikzlibrary{shapes, shadows, arrows, positioning}
 
 \usepackage{times}
 \usepackage[T1]{fontenc}
@@ -31,7 +34,7 @@
 \subtitle
 {}
 
-\author[Hoces] % (optional, use only with lots of authors)
+\author[] % (optional, use only with lots of authors)
 {Garret~Christensen\inst{1}\inst{2}\\
 Fernando~Hoces de la Guardia\inst{1}}
 % - Give the names in the same order as the appear in the paper.
@@ -151,6 +154,13 @@ Primero, un favor: ¿Podrían completar esta breve encuesta?
         \end{tikzpicture}
      \end{frame}
 }
+
+
+% Ideas clave:
+% Que es BITSS
+% Creciente reconocimiento de problemas relacionados con como hacemos ciencia: sesgo de publicacion, p-hacking, dificl replicacion (repetir experimento, mismo resultado) e incluso reproduccion computacinal de resultados (mismos datos, mismo código, distinto resultado!)
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ética en la Investigación Científica}
 \begin{frame}{Ética en la Investigación Científica}
@@ -170,7 +180,7 @@ Primero, un favor: ¿Podrían completar esta breve encuesta?
 \begin{frame}{Ética en la Investigación Científica}
 \begin{itemize}
 \item
-Casos de fraude existen \href{http://pss.sagepub.com/content/24/10/1875}{(Simonsohn 2013)}, pero más importante como investigadores tenemos que admitir nuestra condicion humana, sujeto as sesgos y razonamiento motivado, transparencia puede ayudar con esto \href{http://pps.sagepub.com/content/7/6/615.short}{(Nosek, Spies, Motyl 2012)}.
+Casos de fraude existen \href{http://pss.sagepub.com/content/24/10/1875}{(Simonsohn 2013)}, pero más importante como investigadores tenemos que admitir nuestra condición humana, sujeto as sesgos y razonamiento motivado, transparencia puede ayudar con esto \href{http://pps.sagepub.com/content/7/6/615.short}{(Nosek, Spies, Motyl 2012)}.
 \item
 Quienes llevamos a cabo experimentos o usamos datos con información identificable a nivel individual, tenemos que tomar con seriedad los Comités de Ética Institucionales (IRBs) (Ch. 11--13 Morton \& Williams 2010, \href{http://desposato.org/ethicsfieldexperiments.pdf}{Desposato 2014}). 
 \end{itemize}
@@ -214,7 +224,7 @@ Quienes llevamos a cabo experimentos o usamos datos con información identificab
 %\end{frame}
 
 \begin{frame}{Ética en la Investigación Científica}
-Por que nos preocupamos:
+Por qué nos preocupamos:
 \begin{itemize}[<.->]
 \item \href{http://www.jstor.org/stable/pdf/10.1525/jer.2007.2.4.3.pdf}{(Anderson, Martinson, De Vries 2007)}
 \item \href{http://pss.sagepub.com/content/23/5/524}{(John, Loewenstein, Prelec 2011)}
@@ -373,7 +383,7 @@ Si solo escribimos/publicamos resultados significativos, y no dejamos registro d
 Pre-Registros como una solución al sesgo de publicación:
  \begin{itemize}
   \item
-  Hacer publica la investigación a ejecutar, publicando por adelantado las hipótesis a testear.
+  Hacer pública la investigación a ejecutar, publicando por adelantado las hipótesis a testear.
    %\item If we know every hypothesis test that is run on a given subject, we have a better idea of how seriously to take the significant results.
   \item
 
@@ -389,7 +399,7 @@ Pre-Registros como una solución al sesgo de publicación:
 Nuevos en ciencias sociales, pero: 
    \begin{itemize}[<.->]
    \item   	
-   	Registro de AEA , actualmente solo para RCTs. \url{http://socialscienceregistry.org}
+   	Registro de AEA, actualmente solo para RCTs. \url{http://socialscienceregistry.org}
    \item
     Registro de EGAP  \url{http://egap.org/design-registration}
    \item 
@@ -419,7 +429,7 @@ Nuevos en ciencias sociales, pero:
 }
 
 \begin{frame}{Publicaciones Basadas en Diseño de la Investigación}
-Alias Reportes Registrados, cambia momento de peer review hacia antes del la recolección de dates, análisis y resultados. 
+AKA Reportes Registrados, cambia momento de peer review hacia antes del la recolección de dates, análisis y resultados. 
 
 \begin{enumerate}[<.->]
 \item Diseñar un estudio
@@ -449,7 +459,7 @@ Síntesis sistemático de los resultados
 Organizaciones:
 \begin{itemize}[<.->]
 \item Cochrane Collaboration (Medicina)
-\item Campbell Collaboration (Políticas Publicas)
+\item Campbell Collaboration (Políticas públicas)
 \item \href{http://ies.ed.gov/ncee/wwc/}{What Works Clearinghouse (Educación, Gob. US)}
 \item \href{http://clear.dol.gov/}{CLEAR (Empleo, Gob. US)}
 \item \href{https://www.hendrix.edu/maer-network/}{MAER-NET} (Economía)
@@ -468,13 +478,13 @@ Herramientas:
 \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Pre-Analysis Plans}
+\section{Planes de Pre-Análisis}
 \subsection*{P-Hacking}
 \begin{frame}[<.->]{P-Hacking}
 Definición del problema:
 \begin{itemize}
 \item
-Otros nombres: ``fishing'', grados de libertad del investigador, o ``data-mining''.
+Otros nombres: ``data-fishing'', grados de libertad del investigador, o ``data-mining''.
 \item
 Definición: flexibilidad en el análisis de datos permite presentar \textit{casi cualquier resultado} bajo un umbral arbitrario; significancia estadística pierde sentido.
 \item
@@ -508,11 +518,10 @@ El Exact Fishy Test \href{https://macartan.shinyapps.io/fish/}{\beamerbutton{Lin
 \begin{frame}{Planes de Pre-Análisis}
 \textbf{Explicación de la solución, de 3ie:}
 
-``Un plan de pre-análisis (PAPs) is una descripción detallada de los análisis a ser conducidos. Esta descripción es escrita antes de los datos que contienen los impactos del programa bajo evaluación. Puede especificar las hipótesis a testear, como se construirán la variables, ecuaciones a estimar, controles a utilizar, y otros aspectos del análisis. Una función clave de los PAPs es incrementar la transparencia en investigación. Al especificar los detalles por adelantado antes de ver los resultados, el plan es un resguardo contra data mining y búsqueda de especificaciones. Se les recomienda a los investigadores que desarrollen y suban dichos planes junto con el registro de sus estudios. Sin embargo esto no es requisito para el registro de un estudio.''
-study registration, but it is not required for registration.''
+``Un plan de pre-análisis (PAPs) es una descripción detallada de los análisis a ser conducidos. Esta descripción es escrita antes de ver los datos que contienen los impactos del programa bajo evaluación. Puede especificar las hipótesis a testear, como se construirán las variables, ecuaciones a estimar, controles a utilizar, y otros aspectos del análisis. Una función clave de los PAPs es incrementar la transparencia en investigación. Al especificar los detalles por adelantado antes de ver los resultados, el plan es un resguardo contra data mining y búsqueda de especificaciones. Se les recomienda a los investigadores que desarrollen y suban dichos planes junto con el registro de sus estudios. Sin embargo, esto no es requisito para el registro de un estudio.''
 \end{frame}
 
-\begin{frame}{Origenes: Regulacion Farmaceutica en USA}
+\begin{frame}{Origenes: Regulación Farmaceutica en USA}
 ``E9 Statistical Principles for Clinical Trials'' (1998)
 \href{http://www.fda.gov/downloads/drugs/guidancecomplianceregulatoryinformation/guidances/ucm073137.pdf}{\beamergotobutton{Link}}
 
@@ -537,21 +546,21 @@ study registration, but it is not required for registration.''
 \begin{enumerate}[<.->]
 \def\labelenumi{\arabic{enumi}.}
 \item
-  como se van a medir los principales variables de resultado, 
+  Como se van a medir los principales variables de resultado, 
 \item
- Dentro de las variables de resultado: cuales son primarias, cuales secundarias?,
+ Dentro de las variables de resultado: cuales son primarias, cuales secundarias?
 \item
-composición exacta de toda la familia de tests utilizados en análisis de effectos promedios
+Composición exacta de toda la familia de tests utilizados en análisis de effectos promedios
   \begin{itemize}
-  \item Explicación de efectos promedio , FWER, FDR en Anderson (\href{https://are.berkeley.edu/~mlanderson/pdf/Anderson\%202008a.pdf}{JASA 2008}).
+  \item Explicación de efectos promedio, FWER, FDR en Anderson (\href{https://are.berkeley.edu/~mlanderson/pdf/Anderson\%202008a.pdf}{JASA 2008}).
   \end{itemize}
 \item
-  los subgrupos a ser analizados,
+  Los subgrupos a ser analizados,
 \item
-la dirección esperada de los impactos si queremos usar test de una cola, y
+La dirección esperada de los impactos si queremos usar test de una cola, y
 
 \item
- la especificación primaria a ser utilizada en el análisis.
+ La especificación primaria a ser utilizada en el análisis.
 \end{enumerate}
 \end{frame}
 
@@ -562,7 +571,7 @@ la dirección esperada de los impactos si queremos usar test de una cola, y
 \item
 Descripción de la muestra a ser utilizada en el estudio
 \item
- Fuentes de dato fundamentales
+ Fuentes de datos fundamentales
 \item
 Hipótesis a testear a través de la cadena causal
 \item
@@ -570,7 +579,7 @@ Especificar como se van a construir la variables
 \item
 Especificar la ecuación donde se estimará el efecto del tratamiento 
 \item
-Cual es la estrategia para analizar multiples variables de resultados y múltiples test de hipótesis?
+Cúal es la estrategia para analizar multiples variables de resultados y múltiples test de hipótesis?
 \item
 Procedimiento a utilizar para enfrentar atrición en la muestra
 \item
@@ -608,7 +617,7 @@ No olvidar archivarlo (con una fecha estampada digitalmente)
 
 \begin{itemize}[<.->]
 \item
-J-PAL Registro de Hipotesis , ver \url{http://www.povertyactionlab.org/Hypothesis-Registry}
+J-PAL Registro de Hipótesis , ver \url{http://www.povertyactionlab.org/Hypothesis-Registry}
 
 6 ejemplos de papers publicados:
 \begin{itemize}
@@ -619,7 +628,7 @@ J-PAL Registro de Hipotesis , ver \url{http://www.povertyactionlab.org/Hypothesi
 \end{itemize} 
 \vspace{0.25in}
 
-Amplio rango de que es lo que se debe escribir exactamente y cuanto detalle incorporar en el PAP. En un nivel extremo el código estaría listo para ejecutar en cuanto lleguen los datos. .
+Amplio rango de que es lo que se debe escribir exactamente y cuanto detalle incorporar en el PAP. En un nivel extremo el código estaría listo para ejecutar en cuanto lleguen los datos.
 \end{frame}
 
 { % all template changes are local to this group.
@@ -646,9 +655,9 @@ Amplio rango de que es lo que se debe escribir exactamente y cuanto detalle inco
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{PAP--Estudios Observacionales}
 \begin{itemize}[<.->]
-\item Actual debate en salud publica/epidemiologia.
-\item Pre-especificar de manera verificable: dificil. pero no imposible.
-\item Ejemplo: Datos generados periodicamente por el gobierno.
+\item Actual debate en salud pública/epidemiologia.
+\item Pre-especificar de manera verificable: difícil. pero no imposible.
+\item Ejemplo: Datos generados periódicamente por el gobierno.
 \item Ejemplo: Salario Mínimo (\href{http://onlinelibrary.wiley.com/doi/10.1111/0019-8676.00199/full}{Neumark 2001})
 \end{itemize}
 \end{frame}
@@ -685,12 +694,12 @@ Amplio rango de que es lo que se debe escribir exactamente y cuanto detalle inco
      \end{frame}
 }
 
-\subsection*{Protocolo del Proyecto, Estándares de Información}
+\subsection*{Protocolo del Proyecto, Estándares de Información (Reporting Guidelines)}
 \begin{frame}[<.->]{Protocolo del Proyecto, Estándares de Información}
-Asegurar de que todo disponibilidad lo necesario para que otro investigador replique su investigación.
+Asegurar disponibilidad de todo lo necesario para que otro investigador replique su investigación.
  \begin{itemize}
  \item Encuentre el estándar de información apropiado para su disciplina y sígalo: \url{http://www.equator-network.org}
-\item Informe todos los detalles sobre la implementacion de un proyecto en un protocolo detallado: \url{http://www.spirit-statement.org}
+\item Informe todos los detalles sobre la implementación de un proyecto en un protocolo detallado: \url{http://www.spirit-statement.org}
 \item Pautas Transparency and Openness Promotion (TOP): \url{http://cos.io/top}
 \end{itemize}
 \end{frame}
@@ -708,7 +717,7 @@ Asegurar de que todo disponibilidad lo necesario para que otro investigador repl
 
  \subsection*{Flujo de trabajo}
  \begin{frame}{Flujo de trabajo}
-``Reproduciblidad es simplemente una colaboración con personas que aun no conoces, incluido tu mismo en una semana más'
+``Reproducibilidad es simplemente una colaboración con personas que aun no conoces, incluido tu mismo en una semana más'
 ---Philip Stark, UC Berkeley Statistics
 \end{frame}
 
@@ -718,7 +727,7 @@ Asegurar de que todo disponibilidad lo necesario para que otro investigador repl
  \item Sugerencias practicas sobre organización y programación
  \begin{itemize}[<.->]
  	\item Al realizar cambios a archivos que and sido compartidos/publicados, implica que debe renombrar el archivo.
- 	\item Haga referencia a la version necesaria para ejecutar funciones.
+ 	\item Haga referencia a la versión necesaria para ejecutar funciones.
  	\item Long (2008) \textit{The Workflow of Data Analysis Using Stata}
   \end{itemize}
  \item Programación Literaria: comentario extensivo en el código, apuntando a que sea legible por humanos
@@ -785,7 +794,7 @@ Meta aspiracional: Escriba su código y su paper en el mismo archivo. De esta fo
 Establecido en R/Python y comenzando en Stata.
 \begin{itemize}[<.->]
 \item Incluye tablas dentro del archivo, en lugar de copiar-pegar-formatear elementos estáticos
-\item Todas las cifras dentro del texto también son calculadas de manera dimanica, eliminando la necesidad de tipeo de cifras manualmente.
+\item Todas las cifras dentro del texto también son calculadas de manera dinámica, eliminando la necesidad de tipeo de cifras manualmente.
 \item Cifras y tablas se actualizan automáticamente.
 \item El paper completo es (re)producido con uno o dos clicks
 \end{itemize} 
@@ -815,7 +824,7 @@ Establecido en R/Python y comenzando en Stata.
 
 \subsection*{Compartiendo lo Datos}
 \begin{frame}{Compartiendo lo Datos}
-Publique su codigo y sus datos en un repositorio publico de confianza.\begin{itemize}[<.->]
+Publique su código y sus datos en un repositorio publico de confianza.\begin{itemize}[<.->]
 \item
 Encuentre el repositorio apropiado: \url{http://www.re3data.org/}
 \item
@@ -823,9 +832,200 @@ Los repositorios están diseñados para durar más que su website.
 \item
 También están diseñados para facilitar la búsqueda por parte de otros investigadores.
 \item
-Los repositorios guardan sus datos en formatos publicos que evitan obsolescencia en el tiempo.
+Los repositorios guardan sus datos en formatos públicos que evitan obsolescencia en el tiempo.
 \end{itemize}
 \end{frame}
+
+\section{Lecciones Para el Análisis de Políticas Públicas}
+
+\begin{frame}{Lecciones Para el Análisis de Políticas Públicas}
+\begin{itemize}
+\item Link Evidencia-PP con \textbf{alta} transparencia. 
+\item Link Evidencia-PP con \textbf{baja} transparencia. 
+\item Nuestra propuesta en BITSS.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Una forma en la cual la evidencia afecta las políticas públicas}
+
+\
+\tikzstyle{agent} = [diamond, draw, node distance= 7em, minimum height=5em, minimum width=5em]
+\tikzstyle{line} = [draw, -stealth]
+
+\tikzstyle{line_enph} = [draw, red, ultra thick]
+\tikzstyle{inp} = [draw, circle, text centered, minimum height=2em, text width=2em, node distance= 10em]
+\tikzstyle{outp} = [draw, circle, text centered, minimum height=2em, text width=2em, node distance= 10em]
+\tikzstyle{block1} = [draw, circle,  text width=5em, text centered, minimum height=7em, node distance= 5em]
+\tikzstyle{block2} = [draw, circle,  text width=7em, text centered, minimum height=2em, node distance= 5em]
+\tikzstyle{block3} = [draw, rounded rectangle,  text width=5em, text centered, minimum height=2em, node distance= 5em]
+
+
+\begin{figure}[h!]\centering
+\vspace{-2.0em}
+\begin{tikzpicture}[thick,scale=0.55, every node/.style={scale=0.55}]
+
+%% The oddly shaped truth
+\node[regular polygon, regular polygon sides=3,
+              draw, fill=white,
+              inner sep=.1em,
+              shape border rotate=70](tru){Truth};
+
+
+%%%%%Researcher 1 and Inputs: depends on R_1%%%%%%%
+\node [block1, right = 2em of tru](R_1){Research\linebreak $(R)$};
+\node [block1,inner sep=0em, right = 2em of R_1](PA_1){Policy \linebreak Analysis: ($PA$) \linebreak  Gains  \& \linebreak losses};
+\node [block1, above right = 0em and 8em of R_1](PM_1){Policy\linebreak Maker 1};
+\node [block1, below right = 0em and 8em of R_1](PM_2){Policy\linebreak Maker 2};
+
+\node [block3, right = 2em of PM_1](PC_1){Support};
+\node [block3, right = 2em of PM_2](PC_2){Oppose};
+
+
+%%%%% Draw edges col 2%%%%%%%%%%%%%%%%%
+%Research  to PA
+\draw [line](tru) -- (R_1);
+\draw [line](R_1) -- (PA_1);
+%PA to PM
+\draw [line](PA_1) -- (PM_1);
+\draw [line](PA_1) -- (PM_2);
+%PM to PC
+\draw [line](PM_1) -- (PC_1);
+\draw [line](PM_2) -- (PC_2);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\draw[decoration={brace}, decorate] (7,3.4) -- node[above=6pt](lab4){{\Large Observed by citizens} }(16,3.4);
+
+
+
+
+\end{tikzpicture}
+\caption{Simplified Model of Connection Between Evidence and Policy}
+\vspace{-.8em}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}[shrink=30,label=lack_cred]{Link Evidencia-políticas públicas con Baja Transparencia y Reproducibilidad}
+
+
+
+\tikzstyle{agent} = [diamond, draw, node distance= 7em, minimum height=5em, minimum width=5em]
+\tikzstyle{line} = [draw, -stealth]
+
+\tikzstyle{line_d} = [draw, dashed, -stealth]
+\tikzstyle{inp} = [draw, circle, text centered, minimum height=2em, text width=2em, node distance= 10em]
+\tikzstyle{outp} = [draw, circle, text centered, minimum height=2em, text width=2em, node distance= 10em]
+\tikzstyle{block1} = [draw, circle,  text width=3em, text centered, minimum height=2em, node distance= 5em]
+\tikzstyle{block2} = [draw, circle,  text width=4em, text centered, minimum height=2em, node distance= 5em]
+\tikzstyle{block3} = [draw, rounded rectangle,  text width=5em, text centered, minimum height=2em, node distance= 5em]
+
+\begin{figure}[h!]
+\centering
+\hspace*{0.2\linewidth}
+\begin{tikzpicture}[thick,scale=0.2, every node/.style={scale=0.8}]
+
+%% The oddly shaped truth
+\node[regular polygon, regular polygon sides=3,
+              draw, fill=white,
+              inner sep=.1em,
+              shape border rotate=70](tru){Truth};
+
+
+%%%%%Researcher 1 and Inputs: depends on R_1%%%%%%%
+\node [block1, right = 5em of tru](R_2){$R_2$};
+\node [block1, above = 8em of R_2](R_1){$R_1$} node [left = -0.1em of R_1, text width = 5em]{Large Treatment Effect};
+\node [block1, below = 8em of R_2](R_3){$R_3$} node [left = -0.1em of R_3, text width = 5em]{Small Treatment Effect};
+
+\draw[decoration={brace,mirror}, decorate] (13,-33) -- node[below=6pt, text width = 4.8em](lab1){Researchers Degrees of 
+Freedom}(18,-33);
+
+\draw[decoration={brace,mirror}, decorate] (29,-33) -- node[below=6pt, text width = 4.8em](lab2){P. Analyst Degrees of 
+Freedom}(34,-33);
+
+\draw[decoration={brace}, decorate] (31,33) -- node[below=2pt]{Observed by citizens}(70,33);
+
+%\node [agent](Researcher_1){$R_1$} node [left = 0.6em of Researcher_1, text width = 8em]{Large Treatment Effect};
+
+\node [block1, right = 5em of R_1](PA_12){$PA_{1,2}$};
+\node [block1, above = .5em of PA_12](PA_11){$PA_{1,1}$} node [right = -0.1em of PA_11, text width = 5em]{Large gains only};
+\node [block1, below = .5em of PA_12](PA_13){$PA_{1,3}$};
+
+\node [block1, right = 5em of R_2](PA_22){$PA_{22,}$};
+\node [block1, above = .5em of PA_22](PA_21){$PA_{2,1}$};
+\node [block1, below = .5em of PA_22](PA_23){$PA_{2,3}$};
+
+\node [block1, right = 5em of R_3](PA_32){$PA_{3,2}$};
+\node [block1, above = .5em of PA_32](PA_31){$PA_{3,1}$};
+\node [block1, below = .5em of PA_32](PA_33){$PA_{3,3}$} node [right = -0.1em of PA_33, text width = 5em]{Large losses only};
+
+
+\node [block2, above right = 3em and 15em of R_2](PM_1){Policy\linebreak Maker 1};
+\node [block2, below right = 3em and 15em of R_2](PM_2){Policy\linebreak Maker 2};
+
+\node [block3, right = 3em of PM_1](PC_1){Support};
+\node [block3, right = 3em of PM_2](PC_2){Oppose};
+
+
+%%%%% Draw edges col 2%%%%%%%%%%%%%%%%%
+%Truth to research
+\draw [line](tru) -- (R_1);
+\draw [line_d](tru) -- (R_2);
+\draw [line_d](tru) -- (R_3);
+
+
+%Research  to PA
+\draw [line_d](R_1) -- (PA_13);
+\draw [line_d](R_1) -- (PA_11);
+\draw [line](R_1) -- (PA_12);
+
+\draw [line_d](R_2) -- (PA_23);
+\draw [line_d](R_2) -- (PA_21);
+\draw [line_d](R_2) -- (PA_22);
+
+\draw [line_d](R_3) -- (PA_33);
+\draw [line_d](R_3) -- (PA_31);
+\draw [line_d](R_3) -- (PA_32);
+
+
+
+%PA to PM
+\draw [line](PA_11) -- (PM_1);
+\draw [line](PA_33) -- (PM_2);
+%PM to PC
+\draw [line](PM_1) -- (PC_1);
+\draw [line](PM_2) -- (PC_2);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{tikzpicture}
+\caption{Policy-making with low TR in research and policy analysis}\label{low_cred}
+\end{figure}
+\hyperlink{problems}{\beamerbutton{}} 
+%\end{comment}
+\end{frame}
+
+
+\begin{frame}{Nuestra Propuesta Para el Análisis de Políticas Públicas}
+\begin{enumerate}
+
+\item Publicar pautas de transparencia y reproducibildad para el analisis de políticas públicas (similar a Pautas TOP, descritas antes). 
+
+\item Colaborar con agencias/centro interesados en implementar estas ideas.  
+\texttt{\href{https://rpubs.com/fhoces/dd_cbo_mw}{\underline{Ejemplo aquí.}}}
+
+
+\item Iterar.
+\end{enumerate}
+\end{frame}
+
+
 
 \section{Conclusión}
 \begin{frame}{Conclusión}
@@ -834,11 +1034,11 @@ OK, estoy convencido. Como puedo implementar esto en mi propia investigación?
 \begin{itemize}[<.->]
 \item Tomen nuestro MOOC (E. Miguel).\href{https://www.futurelearn.com/courses/open-social-science-research}{\beamergotobutton{Link}}
 \item Suscribance al blog \& E-mail de BITSS \href{https://bitss.org/blog}{\beamergotobutton{Link}}
-\item Apliquen a nuestro summer institute: RT2. \href{http://www.bitss.org/events/summer-institute/}{\beamergotobutton{Link}}
+\item Apliquen a nuestro Instituto de Verano: RT2. \href{http://www.bitss.org/events/summer-institute/}{\beamergotobutton{Link}}
 \item Apliquen a nuestros fondos de investigacion SSMART (fondos adicionales para investigadores de paises en desarrollo). \href{http://www.bitss.org/ssmart-grants/}{\beamergotobutton{Link}}
 \item Apliquen al premio Leamer-Rosenthal. \href{http://www.bitss.org/lr-prizes/}{\beamergotobutton{Link}}
 \item Revisen nuestra pagina de recursos. \href{http://www.bitss.org/resource-tag/education/}{\beamergotobutton{Link}}
-\item Interesado en incluir parte de estas practicas en el análisis de políticas publicas? Hablen conmigo! \href{mailto:fhoces@berkeley.edu}{fhoces@berkeley.edu}
+\item Interesado en incluir parte de estas practicas en el análisis de políticas públicas? Hablen conmigo! \href{mailto:fhoces@berkeley.edu}{fhoces@berkeley.edu}
 
 \end{itemize}
 \end{frame}
