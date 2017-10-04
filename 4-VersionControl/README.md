@@ -191,7 +191,7 @@ Git utiliza ramas (branches) para que puedas experimentar con ideas nuevas o cor
 
 * Cambia una parte diferente de `regressions.do`. Agrega la linea al final: `summ length`
 
-* Unan la rama experimental a la rama maestra. In Github Desktop esto se hace mediante un clikc en `Branch/Update from`. Es importante asegurarse de estar **en** la rama maestra y hacer update **desde** la rama experimental.
+* Unan la rama experimental a la rama maestra. In Github Desktop esto se hace mediante un click en `Branch/Update from`. Es importante asegurarse de estar **en** la rama maestra y hacer update **desde** la rama experimental.
 
 #### Conflictos
 Between the experimental branch and the main branch, make and commit some conflicting changes (that is, changes to the same lines of the same file). Then try and merge. *What happens?*
