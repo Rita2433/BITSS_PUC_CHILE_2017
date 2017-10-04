@@ -182,18 +182,18 @@ Atlassian has a great [explanation](https://www.atlassian.com/git/tutorials/rese
 ### Branching:
 Git utiliza ramas (branches) para que puedas experimentar con ideas nuevas o corregir errores de codigo.
 
-* Crea, nombra y sincroniza una nueva rama de nombre`experimental` haciendo click en 'create new branch'.
+* Crea, nombra y sincroniza una nueva rama de nombre `experimental` haciendo click en 'create new branch'.
 
 * Cambien el archivo `regressions.do` haciendo la regresion robusta a heterocedasticidad, guarden y hagan commit a la rama `experimental`.
 
 
-* Oh wait, no. Emergency, you have to go back to the main (master) branch.
-* Change a different part of `regressions.do`. Add a line at the end:
-`summ length`
+* Emergencia! Imagina que algo ocurrio y tienes que volver a la rama maestra.
 
-* Merge the experimental branch into the master branch. In Github Desktop this is done by clicking on Update from. Make sure you're *in* Master and Update from experimental.
+* Cambia una parte diferente de `regressions.do`. Agrega la linea al final: `summ length`
 
-#### Conflicts
+* Unan la rama experimental a la rama maestra. In Github Desktop esto se hace mediante un clikc en `Branch/Update from`. Es importante asegurarse de estar **en** la rama maestra y hacer update **desde** la rama experimental.
+
+#### Conflictos
 Between the experimental branch and the main branch, make and commit some conflicting changes (that is, changes to the same lines of the same file). Then try and merge. *What happens?*
 * Change the regression line to read `reg price mpg weight` in master. Save and commit to master.
 * Change the regression line to read `reg price mpg length, robust` in experimental. Save and commit to experimental.
