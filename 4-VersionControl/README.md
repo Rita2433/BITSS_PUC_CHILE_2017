@@ -97,19 +97,19 @@ Si ven estos archivos escondidos, *nunca jamas* los deben tocar (aquí es donde 
 
 Felicitaciones! han clonado exitosamente su primer repositorio. Ahora vamos a *crear* un repositorio nuevo.
 
-* Creen un nuevo repositorio. denle un nombre como `primer_repo_tunombre` *Qué archivos ven ahí?*
+* Creen un nuevo repositorio. Denle un nombre como `primer_repo_tunombre` *Qué archivos ven ahí?*
 
-* Create a text file called `README.md` using your text editor. Give the file three lines of text:
+* Creen un archivo y nombrenlo `README.md` ocupando el editor de texto.  
 
->Turning and turning in the widening gyre
+> Primera linea en su programa
 
-> The falcon cannot hear the falconer;
+> Segunda linea del programa
 
-> Things fall apart; the centre cannot hold;
+> Tercera linea del programa
 
-* Save the file in `codepoetry_<yourname>`
+* Guarden el archivo en la carpeta `primer_repo_tunombre`
 
-What's different about Github Desktop?
+Qué ha cambiado en el app de Github?
 
 * Click on the `README.md` file in Github Desktop.
 
