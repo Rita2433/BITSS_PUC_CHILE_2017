@@ -111,18 +111,18 @@ Felicitaciones! han clonado exitosamente su primer repositorio. Ahora vamos a *c
 
 Qué ha cambiado en el app de Github?
 
-* Click on the `README.md` file in Github Desktop.
+* Abran el archivo `README.md` en Github Desktop.
 
-Git keeps files in three areas. The workspace, the staging area, and the repository.
+Git guarda archivos en tres areas. El area de trabajo, el area de posicionamiento (staging), y el repositorio.
 ![SWC Git areas](https://swcarpentry.github.io/git-novice/fig/git-staging-area.svg)
 
-Github Desktop automatically adds any file you change to the staging area. That's what the checkmark next to the file name means.
+Github Desktop automáticamente añade los archivos al área de posicionamiento. Eso es lo que significa el check al lado de cada nombre.
 
-* Uncheck and recheck `README.md`.
+* Quiten y vuelvan a añadir el check al archivo `README.md`.
 
-* Commit, or permanently store, `README.md` by giving a concise but helpful message like `add README` in the Summary area then clicking on `Commit to master`.
+* Hagan commit, o archiven de manera permante, el archivo `README.md` añadiendo un preve descripción como `README creado`. Luego hagan click in `Commit to master`.
 
-* Create a second file called `regressions.do` using the Stata do file editor. Give it the lines:
+* Creen un segundo archivo ocupando el editor de do-files de Stata y llamenlo `regressions.do`. Escriban estas lineas:
 
 `clear all`
 
@@ -132,22 +132,21 @@ Github Desktop automatically adds any file you change to the staging area. That'
 
 `reg price mpg`
 
-* Save the .do file.
+* Guarden el archivo .do
 
-* Add a fourth line of text to `README.md` and save it.
+* Añadan una cuarta linea al texto de `README.md` y guarden.
 
-> Mere anarchy is loosed upon the world,
+> Cuarta linea del programa
 
-* Uncheck `regressions.do` and commit *only* `README.md` with a message like `add line on anarchy`.
+* Quiten el check de `regressions.do` y hagan commit de *solamente* el archivo`README.md` con el mensaje `cuarta linea agregada a README`.
 
-* Recheck `regressions.do` and commit it with a message like `add regressions.do`.
+* Vuelvan a checkear `regressions.do` y hagan commit con el mensaje `agregamos regressions.do`.
 
-(We're using `add` to mean more than one thing here. Sorry.)
+* Añadan una quinta linea a `README.md`:
+> Quinta linea del programa
 
-* Add a fifth line to `README.md`:
->The blood-dimmed tide is loosed, and everywhere
+* Hagan commit.
 
-* Commit the change.
 * Add a sixth line to `README.md`:
 >The ceremony of innocence is drowned;
 
