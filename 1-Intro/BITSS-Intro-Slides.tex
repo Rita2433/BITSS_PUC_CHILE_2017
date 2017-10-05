@@ -23,10 +23,17 @@
 \usetikzlibrary{shapes, shadows, arrows, positioning}
 
 \usepackage{times}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 % Or whatever. Note that the encoding and the font should match. If T1
 % does not look nice, try deleting the line with the fontenc.
 
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>[noframenumbering]{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
 
 \title[Transparencia en Investigación en las Ciencias Sociales] % (optional, use only with long paper titles)
 {Transparencia en Investigación en las Ciencias Sociales}
@@ -726,7 +733,7 @@ Asegurar disponibilidad de todo lo necesario para que otro investigador replique
  \begin{itemize}
  \item Sugerencias practicas sobre organización y programación
  \begin{itemize}[<.->]
- 	\item Al realizar cambios a archivos que and sido compartidos/publicados, implica que debe renombrar el archivo.
+ 	\item Al realizar cambios a archivos que han sido compartidos/publicados, implica que debe renombrar el archivo.
  	\item Haga referencia a la versión necesaria para ejecutar funciones.
  	\item Long (2008) \textit{The Workflow of Data Analysis Using Stata}
   \end{itemize}
