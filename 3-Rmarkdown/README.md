@@ -7,7 +7,7 @@ Berkeley Initiative for Transparency in the Social
 * Breve introducción ocupando la presentación de [Thomas Leeper](http://thomasleeper.com) de RT2 London. [Presntación aquí](https://osf.io/4ah58/).
 
 * Para el ejercicio practico vamos a seguir el taller de Garret Christensen [en ingles].
-  * Primero deben descargar y descomprimir [este archivo]().
+  * Primero deben descargar y descomprimir [este archivo](https://github.com/fhoces/BITSS_PUC_CHILE_2017/blob/master/3-Rmarkdown/3-Rmarkdown.zip).
 
 
 -----
