@@ -1,14 +1,16 @@
 **Documentos Dinámicos con R Markdown**
 
-by Fernando Hoces de la Guardia
+Fernando Hoces de la Guardia
 
 Berkeley Initiative for Transparency in the Social
-----------
 
 * Breve introducción ocupando la presentación de [Thomas Leeper](http://thomasleeper.com) de RT2 London. [Presntación aquí](https://osf.io/4ah58/).
 
-* Para el ejercicio practico vamos a seguir el taller de Garret Christensen [en ingles]:
+* Para el ejercicio practico vamos a seguir el taller de Garret Christensen [en ingles].
+  * Primero deben descargar y descomprimir [este archivo]().
 
+
+-----
 
 This directory contains several files designed to familiarize you with the basics of dynamic documents in R Studio using R Markdown and KnitR. The most important files are:
 
