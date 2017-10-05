@@ -10,13 +10,15 @@ One Click! Knit PDF and you're done.
 You only have to install a package once, but you have to load the library every time you want to use it. You'll see that a bunch of ugly commands and output gets displayed. You probably wouldn't really want that in your actual paper.
 
 ```{r, echo=FALSE, warning=FALSE, results='hide', message=FALSE}
-#install.packages("foreign")
-library(foreign)
-#install.packages("stargazer")
-library(stargazer)
-#install.packages("sandwich")
-library(sandwich)
+# Loading required libraries
+list.of.packages <- c("foreign", "stargazer", "sandwich", "haven")
 
+# Chicking if library installed, installed if not. 
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos= "http://cran.cnr.berkeley.edu/") 
+
+# Calling libraries 
+lapply(list.of.packages, require, character.only = TRUE)
 ```
 
 Which is why you can turn off code (with echo=FALSE) and/or results (with results='hide'). You're not going to see anything from this chunk here: 
@@ -42,7 +44,7 @@ Loading the data
 You can bring in the Stata data directly with the 'foreign' package. However, as far as I know, this package only works through Stata version 12 data. I might be wrong on that.
 
 ```{r, echo = FALSE, warning=FALSE }
-WASHB<-read.dta("WASHBpublic_mock.dta")
+WASHB<-haven::read_dta("WASHBpublic_mock.dta")
 ```
 
 Running Analysis
