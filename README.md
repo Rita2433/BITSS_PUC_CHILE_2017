@@ -6,30 +6,29 @@ UC Berkeley ([Berkeley Initative for Transparency in the Social Sciences](http:/
 Gracias a [Garret Christensen](http://www.ocf.berkeley.edu/~garret) por proveer el material original para este entrenamiento.
 
 ### Materiales para el taller de reproducibilidad en PUC-Chile
- Materials for the 2017 Reproducibility Training at IMEBESS
-Software installation is required. Instructions are [here](https://github.com/BITSS/IMEBESS2017). Please do your best to install the programs *before* coming to the workshop, though help will be available if you run into trouble.
+Las instrucciones requeridas para instalar el software necesario para el taller se encuentran [aquí](https://github.com/fhoces/BITSS_PUC_CHILE_2017/tree/master/2-Registros#instalación-de-software).
 
-1-Intro has slides to introduce researchers to the problems of publication bias and p-hacking.
+Los materiales del seminario y el taller se encuentran en éste repositorio. El repositorio contiene carpetas con la siguiente información:
 
-2-Reg-and-PAP has slides on the partial solutions of registration and pre-analysis plans.
+1-Presentacion tiene la presentación del seminario.
 
-3-Tools-Intro has slides on reproducible workflow software tools.
+2-Registros contiene las instrucciones para el primer modulo del taller de hoy.
 
-4-[fill in the blank] have materials for doing dynamic (automatically updated) documents in R and Stata.
+3-RMarkdown contiene las instrucciones para el segundo modulo sobre Documentos Dinamicos.
 
-5-VersionControl has an intro to version control with Git/Github.
+4-VersionControl contiene la informacion para el tercer y ultimo modulo sobre Git/Github.
 
-Additional materials are in the X-folders.
-
+Material adicional se puede encontrar en las carpetas-x.
 
 
-Workshop Agenda
+
+Agenda para el taller
 -----------
 
-Time | Session |
+Hora | Sesión |
 ------------ | ------------- |
-9:00-10:15 | Pre-registration with the AEA registry and the Open Science Framework|
+9:00-10:15 | Registros con el AEA registry y con el Open Science Framework|
 10:15-10:30 | COFFEE BREAK |
-10:30-11:45 | Dynamic documents with R (using RMarkdown + brief references to Stata) |
+10:30-11:45 | Documentos Dinámicos con R (utilizando RMarkdown + breve referencia a Stata) |
 11:15-11:30 | COFFEE BREAK |
-12:00-13:00 | Version control with Git and GitHub |
+12:00-13:00 | Control de Versiones con Git y GitHub |

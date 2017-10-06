@@ -162,7 +162,7 @@ Hay varias formas de deshacer en git, no todas de ellas son posibles en Github D
 
 3. Click en Undo inmediatamente después de un commit.
 
-* Reviertan el commit que aggrego la quinta linea en `README.md`.
+* Reviertan el commit que agregó la quinta linea en `README.md`.
 
 * Reviertan la reversion de forma tal que vuevan a tener las 6 lineas completas en `README.md`.
 
@@ -187,12 +187,29 @@ Git utiliza ramas (branches) para que puedas experimentar con ideas nuevas o cor
 * Cambien el archivo `regressions.do` haciendo la regresion robusta a heterocedasticidad, guarden y hagan commit a la rama `experimental`.
 
 
-* Emergencia! Imagina que algo ocurrio y tienes que volver a la rama maestra.
+* Emergencia! Imagina que algo ocurrió y tienes que volver a la rama maestra.
 
 * Cambia una parte diferente de `regressions.do`. Agrega la linea al final: `summ length`
 
 * Unan la rama experimental a la rama maestra. In Github Desktop esto se hace mediante un click en `Branch/Update from`. Es importante asegurarse de estar **en** la rama maestra y hacer update **desde** la rama experimental.
 
+### Publicando en la web (pushing y pulling):
+
+Todo el contenido rastreado por git (y más) puede ser almacenado online en GitHub.com (o cualquier otro servidor con Git instalado), lo que te va a permitir trabajar en multiples computadores.
+
+Git hace uso frequente de comandos llamados `push`ing (enviar) y `pull`ing (recivir). Github Desktop simplifica ambas en una operacion llamada "Sync".
+
+Para publicar tu repositorio en la web.
+* Simplemente has click en el botón 'Publish'.
+
+<!--Now we want to make sure that we can make changes online via GitHub.com, and then sync them to your computer (pulling).
+
+* Go back and forth between making a local change, committing, and pushing it to the web, and making remote (online) changes (click the pencil button to edit, then commit at the bottom of the screen), being sure to sync between each commit. Eventually you'll screw up and not sync enough. (That is, change a file online and commit it. Don't sync. Make a contradictory change locally and commit it. Try and sync. *What happens?*)
+-->
+
+<!--Aside: This tutorial is written in Markdown. If you want something *not* to render markdown, comment it out like this. Same as HTML.-->
+
+<!--
 #### Conflictos
 Between the experimental branch and the main branch, make and commit some conflicting changes (that is, changes to the same lines of the same file). Then try and merge. *What happens?*
 * Change the regression line to read `reg price mpg weight` in master. Save and commit to master.
@@ -201,22 +218,6 @@ Between the experimental branch and the main branch, make and commit some confli
 * View the conflict (`<<<<<<<` `=======` and `>>>>>>>`), resolve the conflict by editing the weird part out of the file yourself, saving, and committing.
 
 There's a conflict tutorial [here](https://bids.github.io/2017-01-12-ucb/lessons/git/).
-
-### Publishing (pushing and pulling):
-
-You can store stuff online at GitHub.com (or any server with Git installed), which will enable you to work on multiple computers.
-
-Git frequently refers to `push`ing (sending) and `pull`ing (retreiving). Github Desktop simplifies this and just calls it "Sync".
-
-To publish your repository on the web.
-* Just click the Publish button.
-
-Now we want to make sure that we can make changes online via GitHub.com, and then sync them to your computer (pulling).
-
-* Go back and forth between making a local change, committing, and pushing it to the web, and making remote (online) changes (click the pencil button to edit, then commit at the bottom of the screen), being sure to sync between each commit. Eventually you'll screw up and not sync enough. (That is, change a file online and commit it. Don't sync. Make a contradictory change locally and commit it. Try and sync. *What happens?*)
-
-<!--Aside: This tutorial is written in Markdown. If you want something *not* to render markdown, comment it out like this. Same as HTML.-->
-
 
 ### Collaborating:
 Thus far we've been working solo. Now we'll collaborate. GitHub is built for this. Thousands of people contribute code to large open source coding projects without ever meeting in person. It's also great for just a few people to collaborate on simpler coding projects.
@@ -247,6 +248,6 @@ This is how you suggest changes to repositories to which you aren't a full fledg
 Many, if not most, experienced users will use Git via the command line. (Terminal on a Mac, the Git Shell that came with the Desktop app, Windows PowerShell, there are a lot of options. They're all where you type commands for your computer to execute.) You can read why [here](http://programmers.stackexchange.com/questions/173297/why-learn-git-when-there-are-gui-apps-for-github). Basically, it's more powerful.
 
 There are a million and one online tutorials for Git in the command line. [Software Carpentry's](http://swcarpentry.github.io/git-novice/) is good, as is [Atlassian's](https://www.atlassian.com/git/tutorials/). The basic stuff is all nicely summarized [here](http://rogerdudler.github.io/git-guide/) in a single page.
-
+-->
 
 **1.** For more on forking, see [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)

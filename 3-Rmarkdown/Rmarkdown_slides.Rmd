@@ -7,6 +7,16 @@ output: ioslides_presentation
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE) # change to echo=FALSE to turn echo permanently off
+# Loading required libraries
+list.of.packages <- c("foreign", "stargazer", "sandwich", "haven", "ggplot2", "plotly")
+
+# Chicking if library installed, installed if not. 
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos= "http://cran.cnr.berkeley.edu/") 
+
+# Calling libraries 
+lapply(list.of.packages, require, character.only = TRUE)
 ```
 
 ## HTML Slides in RMarkdown
@@ -29,11 +39,11 @@ summary(cars)
 Since we're doing HTML and now PDF, we can make some cool interactive graphs using `plotly`:
 
 ```{r, echo=FALSE, message=FALSE}
-
-need <- c("plotly") # list packages you need
-have <- need %in% rownames(installed.packages()) # see which are already
-if(any(!have)) install.packages(need[!have]) # installs the missing ones 
-invisible(lapply(need, library, character.only=T)) # then loads them all
+# 
+# need <- c("plotly") # list packages you need
+# have <- need %in% rownames(installed.packages()) # see which are already
+# if(any(!have)) install.packages(need[!have]) # installs the missing ones 
+# invisible(lapply(need, library, character.only=T)) # then loads them all
 
 plot_ly(x = rnorm(500), type = "histogram")
 

@@ -32,6 +32,15 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE) # change to echo=FALSE to turn echo permanently off
+# Loading required libraries
+list.of.packages <- c("foreign", "stargazer", "sandwich", "haven", "ggplot2")
+
+# Chicking if library installed, installed if not. 
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos= "http://cran.cnr.berkeley.edu/") 
+
+# Calling libraries 
+lapply(list.of.packages, require, character.only = TRUE)
 ```
 
 <!-- If you want to add a table of contents, use '\tableofcontents'; add a pageprage using 'pagebreak'-->
@@ -97,7 +106,7 @@ rm(list = ls()) # clear workspace; always a good idea when starting
 
 Then, let's load our packages:
 
-```{r, echo=TRUE, message=FALSE}
+```{r, echo=TRUE, message=FALSE, eval=FALSE}
 need <- c("foreign", "sandwich", "ggplot2", "stargazer") # list packages you need
 have <- need %in% rownames(installed.packages()) # see which are already
 if(any(!have)) install.packages(need[!have]) # installs the missing ones 
@@ -107,7 +116,7 @@ invisible(lapply(need, library, character.only=T)) # then loads them all
 Load the data: 
 
 ```{r, echo = T, message = F, warning=F}
-washb <- read.dta("WASHBpublic_mock.dta")
+washb <- haven::read_dta("WASHBpublic_mock.dta")
 ```
 
 Run the models:
