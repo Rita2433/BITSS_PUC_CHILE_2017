@@ -246,8 +246,9 @@ This is how you suggest changes to repositories to which you aren't a full fledg
 
 #### Command Line:
 Many, if not most, experienced users will use Git via the command line. (Terminal on a Mac, the Git Shell that came with the Desktop app, Windows PowerShell, there are a lot of options. They're all where you type commands for your computer to execute.) You can read why [here](http://programmers.stackexchange.com/questions/173297/why-learn-git-when-there-are-gui-apps-for-github). Basically, it's more powerful.
-
-There are a million and one online tutorials for Git in the command line. [Software Carpentry's](http://swcarpentry.github.io/git-novice/) is good, as is [Atlassian's](https://www.atlassian.com/git/tutorials/). The basic stuff is all nicely summarized [here](http://rogerdudler.github.io/git-guide/) in a single page.
 -->
 
-**1.** For more on forking, see [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
+Hay muchos tutoriales sobre git en la web. Un recurso que recomiendo mucho es[Software Carpentry](http://swcarpentry.github.io/git-novice/) y también [Atlassian](https://www.atlassian.com/git/tutorials/). Lo mas básico esta muy bien resumido en una pagina [aquí](http://rogerdudler.github.io/git-guide/) in a single page.
+
+
+**1.** Para más información sobre forking, ver [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
